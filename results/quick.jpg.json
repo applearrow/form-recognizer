@@ -1,0 +1,10 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "QUICK CRAN",
+  "MerchantPhoneNumber": "+33450457343",
+  "Subtotal": 18.34,
+  "Total": 19.35,
+  "TotalTax": 1.0,
+  "TransactionDate": "2008-06-26",
+  "TransactionTime": "20:24:00"
+}

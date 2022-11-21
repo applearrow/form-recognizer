@@ -1,33 +1,50 @@
-# import libraries
-import os
+from genericpath import exists
+import json
+import pickle
+import time
+from decouple import config
 from azure.ai.formrecognizer import DocumentAnalysisClient
 from azure.core.credentials import AzureKeyCredential
-from decouple import config
+from recognizer_utils.formatting import cast_datetime_to_str, format_bounding_region, format_polygon, print_receipts
+from termcolor import colored
 
 endpoint = config('FORM_RECOGNIZER_ENDPOINT')
 key = config('FORM_RECOGNIZER_KEY')
 
-def format_bounding_region(bounding_regions):
-    if not bounding_regions:
-        return "N/A"
-    return ", ".join("Page #{}: {}".format(region.page_number, format_polygon(region.polygon)) for region in bounding_regions)
+def analyze_image( image: str, results_folder: str):
+    
+    print (colored(f'Analyzing {image}...', 'white'))
+    pickle_folder = 'pickle'
 
-def format_polygon(polygon):
-    if not polygon:
-        return "N/A"
-    return ", ".join(["[{}, {}]".format(p.x, p.y) for p in polygon])
+    path_to_file = f'{pickle_folder}/{image}.pkl'
+    file_exists = exists(path_to_file)
+    if (not file_exists):
+        # Analyze the image using form recognizer
+        docUrl = f'https://raw.githubusercontent.com/applearrow/applearrow.github.io/main/receipts/{image}'
+        document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
+        start = time.time()
+        poller = document_analysis_client.begin_analyze_document_from_url("prebuilt-receipt", docUrl)
+        result = poller.result()
+        end = time.time()
+        print(colored(f'Analysis for {image} took {end - start} seconds'), 'white')
+        # Save the result for future reference
+        with open(f'{pickle_folder}/{image}.pkl', 'wb+') as f:
+            pickle.dump(result, f)
+    else:
+        # Just load the previous analysis result from a pickle file
+        with open(f'{pickle_folder}/{image}.pkl', 'rb') as f:
+            result = pickle.load(f)
+        print(colored(f'Reading pickle...', 'white'))
 
+    docs = print_receipts(result)
+    first_doc = docs[0]
+    if (first_doc):
+        # Save the output to a file 
+        with open(f'{results_folder}/{image}.json', 'w+', encoding='utf-8') as f:
+            json.dump(cast_datetime_to_str(first_doc), f, indent=2)
 
-def analyze_general_documents():
-    # sample document
-    docUrl = "https://raw.githubusercontent.com/Azure-Samples/cognitive-services-REST-api-samples/master/curl/form-recognizer/sample-layout.pdf"
-
-    # create your `DocumentAnalysisClient` instance and `AzureKeyCredential` variable
-    document_analysis_client = DocumentAnalysisClient(endpoint=endpoint, credential=AzureKeyCredential(key))
-
-    poller = document_analysis_client.begin_analyze_document_from_url(
-            "prebuilt-document", docUrl)
-    result = poller.result()
+    return 
+    
 
     for style in result.styles:
         if style.is_handwritten:
@@ -114,7 +131,3 @@ def analyze_general_documents():
                     )
                 )
     print("----------------------------------------")
-
-
-if __name__ == "__main__":
-    analyze_general_documents()

@@ -1,0 +1,8 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "White Castle",
+  "Total": 20.15,
+  "TotalTax": 2.85,
+  "TransactionDate": "2017-01-31",
+  "TransactionTime": "12:43:53"
+}

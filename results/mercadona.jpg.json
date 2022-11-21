@@ -1,0 +1,10 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "MERCADONA, S.A.",
+  "MerchantPhoneNumber": "+34933454677",
+  "Subtotal": 8.8,
+  "Total": 9.55,
+  "TotalTax": 0.75,
+  "TransactionDate": "2019-08-30",
+  "TransactionTime": "12:53:00"
+}

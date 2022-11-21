@@ -1,0 +1,10 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "LEROY MERLIN LA MAQUINISTA",
+  "MerchantPhoneNumber": "+34932748484",
+  "Subtotal": 40.95,
+  "Total": 40.95,
+  "TotalTax": 38.84,
+  "TransactionDate": "2016-04-16",
+  "TransactionTime": "13:19:00"
+}

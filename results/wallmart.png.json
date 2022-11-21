@@ -1,0 +1,10 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "Walmart",
+  "MerchantPhoneNumber": "+18432818352",
+  "Subtotal": 34.97,
+  "Total": 37.77,
+  "TotalTax": 2.8,
+  "TransactionDate": "2013-02-25",
+  "TransactionTime": "10:00:08"
+}

@@ -1,0 +1,232 @@
+[
+    {
+        "ImageFile": "quick.jpg",
+        "MerchantName": "QUICK CRAN",
+        "TransactionDate": "2008-06-26",
+        "Total": 19.35,
+        "transactionTime": "20:24:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "parking1.png",
+        "MerchantName": "EZ PZ LINK PARK",
+        "TransactionDate": "19-10-2019",
+        "Total": 15,
+        "DocType": "receipt"
+    },
+    {
+        "ImageFile": "parking2.png",
+        "MerchantName": "Royal Valet Parking",
+        "TransactionDate": "2019-10-19",
+        "Total": 23,
+        "DocType": "receipt.parking"
+    },
+    {
+        "ImageFile": "parking3.png",
+        "MerchantName": "City Of Fort Lauderdale",
+        "TransactionDate": "2017-11-20",
+        "Total": 9.48,
+        "transactionTime": "17:22:00",
+        "DocType": "receipt.parking"
+    },
+    {
+        "ImageFile": "british1.jpg",
+        "MerchantName": "Post Office Ltd.",
+        "TransactionDate": "2016-08-13",
+        "Total": 11,
+        "transactionTime": "11:17:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "british2.jpg",
+        "MerchantName": "Post Office Ltd.",
+        "TransactionDate": "2018-06-12",
+        "Total": 2.95,
+        "transactionTime": "15:42:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "british3.jpg",
+        "MerchantName": "Royal",
+        "TransactionDate": "2019-06-01",
+        "Total": 5.5,
+        "transactionTime": "18:02:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "british4.jpg",
+        "MerchantName": "Sainsbury's Supermarkets Ltd",
+        "TransactionDate": "2015-08-16",
+        "Total": 0.2,
+        "transactionTime": "22:42:33",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "british5.jpg",
+        "MerchantName": "Waitrose",
+        "TransactionDate": "2014-04-03",
+        "Total": 123.49,
+        "transactionTime": "14:27:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "british6.jpg",
+        "MerchantName": "Waitrose",
+        "TransactionDate": "2009-09-10",
+        "Total": 28.49,
+        "transactionTime": "11:05:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "french1.jpg",
+        "MerchantName": "QUICK CRAN",
+        "TransactionDate": "2008-06-26",
+        "Total": 19.35,
+        "transactionTime": "20:24:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "french2.png",
+        "MerchantName": "SES",
+        "TransactionDate": "2020-03-09",
+        "Total": 15.8,
+        "transactionTime": "13:15:08",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "french3.jpg",
+        "MerchantName": "E.LECLERC",
+        "TransactionDate": "2009-04-20",
+        "Total": 8.8,
+        "transactionTime": "15:53:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "french4.jpg",
+        "MerchantName": "Jean Coutu",
+        "TransactionDate": "2018-11-21",
+        "Total": 17.22,
+        "transactionTime": "16:50:52",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "french5.jpg",
+        "MerchantName": "INE ARK",
+        "TransactionDate": "2020-03-15",
+        "Total": 11.15,
+        "transactionTime": "12:53:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "gas1.png",
+        "MerchantName": "FUEL DEPOT",
+        "TransactionDate": "2020-07-10",
+        "Total": 98.55,
+        "transactionTime": "10:40:00",
+        "DocType": "receipt.gas"
+    },
+    {
+        "ImageFile": "gas2.png",
+        "MerchantName": "SunOco",
+        "TransactionDate": "2021-05-23",
+        "Total": 69.07,
+        "transactionTime": "9:55:00",
+        "DocType": "receipt.gas"
+    },
+    {
+        "ImageFile": "gas3.jpg",
+        "MerchantName": "MOBILE",
+        "TransactionDate": "2018-09-23",
+        "Total": 14.43,
+        "transactionTime": "23:45:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "oister.jpg",
+        "MerchantName": "Day Tavelcard",
+        "TransactionDate": "2006-05-25",
+        "Total": 4.90,
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "sheraton.jpg",
+        "DocType": "receipt.hotel",
+        "comments": "ArrivalDate & DepartureDate"
+    },
+    {
+        "ImageFile": "sncf.jpg",
+        "MerchantName": "SNCF",
+        "Total": 73,
+        "DocType": "receipt.hotel"
+    },
+    {
+        "ImageFile": "plane1.jpg",
+        "MerchantName": "UNITED AIRLINES, INC.",
+        "Total": 716.41,
+        "DocType": "receipt"
+    },
+    {
+        "ImageFile": "leroy1.jpg",
+        "MerchantName": "LEROY MERLIN LA MAQUINISTA",
+        "TransactionDate": "2016-04-16",
+        "Total": 40.95,
+        "transactionTime": "13:19:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "mercadona.jpg",
+        "MerchantName": "MERCADONA, S.A.",
+        "TransactionDate": "2019-08-30",
+        "Total": 9.55,
+        "transactionTime": "12:53:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "white_castle.jpg",
+        "MerchantName": "White Castle",
+        "TransactionDate": "2017-01-31",
+        "Total": 20.15,
+        "transactionTime": "12:43:53",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "optica.jpg",
+        "MerchantName": "MULTIOPTICAS",
+        "TransactionDate": "2017-09-18",
+        "Total": 147,
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "mark_ticket.jpg",
+        "MerchantName": "Marks & Spencer PLC",
+        "TransactionDate": "2000-06-19",
+        "Total": 3.59,
+        "transactionTime": "12:21:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "receipt8.jpg",
+        "MerchantName": "OSTERIA DEL PORTO",
+        "TransactionDate": "2021-07-16",
+        "Total": 120.86,
+        "transactionTime": "21:24:04",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "receipt0.png",
+        "MerchantName": "Strong Flour",
+        "TransactionDate": "2018-05-05",
+        "Total": 48.15,
+        "transactionTime": "13:31:00",
+        "DocType": "receipt.retailMeal"
+    },
+    {
+        "ImageFile": "Tagliatella.pdf",
+        "MerchantName": "Pastificio Service S.L.U.",
+        "TransactionDate": "2021-09-24",
+        "Total": 61.50,
+        "transactionTime": "22:29:00",
+        "DocType": "receipt.retailMeal",
+        "comments": "It’s able to extract comma separated decimals but failed for the Total."
+    }
+]

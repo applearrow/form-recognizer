@@ -1,0 +1,10 @@
+{
+  "DocType": "receipt.retailMeal",
+  "MerchantName": "Waitrose",
+  "MerchantPhoneNumber": "+442072354958",
+  "Subtotal": 28.23,
+  "Total": 28.49,
+  "TotalTax": 0.26,
+  "TransactionDate": "2009-09-10",
+  "TransactionTime": "11:05:00"
+}
