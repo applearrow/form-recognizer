@@ -13,7 +13,8 @@ def analyze_images( images: list[str], results_folder: str):
 
 if __name__ == "__main__":
     results_folder = 'results'
-    images = [ 'gas1.png' ]
+    images = [ 'gas1.png', 'gas2.png', 'gas3.jpg' ]
+    # images = [ 'french1.jpg', 'french2.png', 'french3.jpg' ]
     # images = [
     #     "British1.jpg", "British6.jpg",    "french1.jpg",    "gas1.png",        "mercadona.jpg",   "parking3.png",    "portales.jpg",    "receipt0.png",  "wallmart.png",
     #     "British2.jpg", "Tagliatella.pdf", "french2.png",    "gas2.png",        "oister.jpg",      "pizza.jpg",       "pub.jpg",         "receipt8.jpg",  "white_castle.jpg",
@@ -22,5 +23,5 @@ if __name__ == "__main__":
     #     "British5.jpg", "creperie.jpg",    "french5.jpg",    "mark_ticket.jpg", "parking2.png",    "porquets.jpg",    "raco.jpg",        "train1.jpg"
     # ]
     analyze_images(images, results_folder)
-    compare_results('correct_values.json')
+    compare_results(images, 'correct_values.json')
 
